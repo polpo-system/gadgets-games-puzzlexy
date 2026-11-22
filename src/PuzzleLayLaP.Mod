@@ -18,6 +18,8 @@ BEGIN
 	IF nl THEN Texts.WriteLn(W) END
 END Write;
 
+PROCEDURE ^SetParams*;
+
 PROCEDURE BuildDesc(WithCmd: BOOLEAN);
 VAR j, k, pos: INTEGER; objname, coord: ARRAY 4 OF CHAR; obj: Objects.Object;
 		L: Objects.Library; B: Objects.BindMsg; picts: Pictures.Picture; sideshrt: INTEGER;
